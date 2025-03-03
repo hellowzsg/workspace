@@ -1,0 +1,37 @@
+#spaces:
+#  - name: service
+#    dst_root: D:\gowork\workspace\_local\workspace\demo
+#    src_root: C:\Users\zhushigang\Desktop\dele\service
+#    ignore:
+#      - "api"
+#    using:
+#      - "app-interface-plan"
+#      - "file-distribution-svc"
+#  - name: api
+#    using:
+#      - "file-distribution-api"
+#    dst_root: D:\gowork\workspace\_local\workspace\demo\api
+#    src_root: C:\Users\zhushigang\Desktop\dele\api
+
+
+spaces:
+  - name: "service"
+    using:
+      - "_local"
+      - "app-interface-plan"
+      - "file-distribution-svc"
+      - "saas-media-svc"
+      - "saas-common"
+      - "enterprise-center-svc"
+    dst_root: D:\gowork\workspace
+    src_root: D:\gowork\saas-svc
+    ignore:
+      - "api"
+      - "api"
+  - name: "api"
+    using:
+      - "app-interface-plan-api"
+      - "file-distribution-api"
+      - "saas-media-api"
+    dst_root: D:\gowork\workspace\api
+    src_root: D:\gowork\saas-api
